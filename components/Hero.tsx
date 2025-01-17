@@ -4,6 +4,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -34,10 +35,18 @@ function Hero() {
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <nav className="flex space-x-4 text-xs uppercase">
-          <span>About</span>
-          <span>Experience</span>
-          <span>Skills</span>
-          <span>Projects</span>
+          <Link href={"#about"} className="heroButton">
+            About
+          </Link>
+          <Link href={"#experience"} className="heroButton">
+            Experience
+          </Link>
+          <Link href={"#skills"} className="heroButton">
+            Skills
+          </Link>
+          <Link href={"#projects"} className="heroButton">
+            Projects
+          </Link>
         </nav>
       </div>
     </div>
