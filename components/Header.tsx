@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 function Header() {
   return (
-    <header className="sticky top-0 max-w-7xl mx-auto mt-4">
+    <header className="sticky top-0 border-[#333333] z-50 max-w-7xl mx-auto pt-4">
       <div className="flex justify-between">
         <motion.div
           initial={{ x: -500, opacity: 0, scale: 0 }}
