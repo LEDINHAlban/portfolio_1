@@ -1,6 +1,7 @@
-// components/About.tsx
+"use client";
 
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -10,7 +11,25 @@ const About = () => {
       </h2>
 
       <div className="max-w-4xl w-full flex flex-col md:flex-row items-center text-center md:text-left">
-        <div className="w-40 h-40 md:w-48 md:h-48 flex-shrink-0 mb-6 md:mb-0">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.8 }}
+          variants={{
+            offscreen: {
+              x: -50,
+            },
+            onscreen: {
+              x: 0,
+              transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              },
+            },
+          }}
+          className="w-40 h-40 md:w-48 md:h-48 flex-shrink-0 mb-6 md:mb-0"
+        >
           <Image
             src="/avatar_Alban2.webp"
             alt="Alban"
@@ -18,9 +37,27 @@ const About = () => {
             height={192}
             className="rounded-lg"
           />
-        </div>
+        </motion.div>
 
-        <div className="md:ml-8 mt-6 md:mt-0 text-center md:text-left">
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ amount: 0.8 }}
+          variants={{
+            offscreen: {
+              y: -50,
+            },
+            onscreen: {
+              y: 0,
+              transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8,
+              },
+            },
+          }}
+          className="md:ml-8 mt-6 md:mt-0 text-center md:text-left"
+        >
           <h3 className="text-xl font-bold">Here is a little background</h3>
           <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
             I&apos;m Alban. I&apos;ve been coding for over 2 years now. As a
@@ -39,7 +76,7 @@ const About = () => {
             expanding my knowledge in this area, I am determined to contribute
             to more sustainable technological solutions.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
