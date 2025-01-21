@@ -3,7 +3,7 @@ import React from "react";
 
 function CardExperience() {
   return (
-    <div className="bg-[#282828] h-5/6 w-4/6 px-7">
+    <article className="bg-[#282828] px-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <div className="flex justify-center items-center mt-5">
         <Image
           src="/acheterlouer_logo.png"
@@ -13,8 +13,8 @@ function CardExperience() {
         />
       </div>
       <div className="flex flex-col space-y-1 mt-5">
-        <h3 className="text-2xl">Company</h3>
-        <p className="font-bold">Role</p>
+        <h3 className="text-4xl font-light">Company</h3>
+        <p className="font-bold text-2xl">Role</p>
         <div className="flex space-x-2">
           <Image
             src="/stack_logo/react.svg"
@@ -32,14 +32,11 @@ function CardExperience() {
       </div>
 
       <p className="mt-7 uppercase text-sm text-gray-300">Duration</p>
-      <ul
-        className="pl-4 space-y-4 text-sm mt-3"
-        style={{ listStyleType: "disc" }}
-      >
+      <ul className="pl-4 space-y-4 text-sm mt-3 list-disc">
         <li>first comment fdsqf dsqfqsf sdf fdsqfqs dfqsd fqsfd</li>
         <li>second comment</li>
       </ul>
-    </div>
+    </article>
   );
 }
 
