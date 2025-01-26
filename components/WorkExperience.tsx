@@ -16,8 +16,7 @@ function WorkExperience() {
         <h2 className="pageTitle mt-12">Experience</h2>
       </div>
 
-      {/* list of cards */}
-      <div className="w-full flex space-x-4 h-5/6 overflow-x-scroll p-10 snap-x snap-mandatory">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-8 mt-8 max-w-7xl mx-auto p-8">
         <CardExperience />
         <CardExperience />
       </div>

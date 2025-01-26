@@ -3,7 +3,7 @@ import React from "react";
 
 function CardExperience() {
   return (
-    <article className="bg-[#282828] px-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="bg-[#282828]">
       <div className="flex justify-center items-center mt-5">
         <Image
           src="/acheterlouer_logo.png"
