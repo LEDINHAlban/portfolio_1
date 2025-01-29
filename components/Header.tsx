@@ -12,7 +12,7 @@ function Header() {
     <header className="sticky top-0 border-[#333333] z-50 max-w-7xl mx-auto p-4">
       <div className="flex justify-between">
         <motion.div
-          initial={{ x: -500, opacity: 0, scale: 0 }}
+          initial={{ x: -70, opacity: 0, scale: 0 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
           className="flex space-x-4"
@@ -25,7 +25,7 @@ function Header() {
           </Link>
         </motion.div>
         <motion.div
-          initial={{ x: 500, opacity: 0, scale: 0 }}
+          initial={{ x: 70, opacity: 0, scale: 0 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
