@@ -20,7 +20,7 @@ function Header() {
           <Link href="https://github.com/LEDINHAlban">
             <FaGithub color="grey" size="1.2em" />
           </Link>
-          <Link href="https://github.com/LEDINHAlban">
+          <Link href="https://www.linkedin.com/in/a-ledinh/">
             <FaLinkedin color="grey" size="1.2em" />
           </Link>
         </motion.div>
@@ -28,10 +28,14 @@ function Header() {
           initial={{ x: 500, opacity: 0, scale: 0 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
-          className="flex space-x-3 items-center"
         >
-          <TbMailFilled color="grey" size="1.2em" />
-          <p className="hidden md:block">Get in touch</p>
+          <Link
+            href={"#contact"}
+            className="heroButton flex space-x-3 items-center"
+          >
+            <TbMailFilled color="grey" size="1.2em" />
+            <p className="hidden md:block">Get in touch</p>
+          </Link>
         </motion.div>
       </div>
     </header>
