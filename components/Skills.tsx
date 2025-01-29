@@ -57,7 +57,7 @@ function Skills() {
   return (
     <div className="h-screen grayBackground flex flex-col items-center">
       <h2 className="pageTitle mt-12">Skills</h2>
-      <div className="grid grid-cols-4 gap-4 mt-20">
+      <div className="grid grid-cols-4 gap-4 mt-20 p-[50px]">
         {skills.map((skill) => {
           return (
             <motion.div

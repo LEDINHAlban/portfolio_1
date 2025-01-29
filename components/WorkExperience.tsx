@@ -10,7 +10,7 @@ function WorkExperience() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen grayBackground"
+      className="min-h-screen grayBackground pb-12"
     >
       <div className="flex justify-center items-center">
         <h2 className="pageTitle mt-12">Experience</h2>

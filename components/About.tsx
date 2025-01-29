@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="h-screen grayBackground flex flex-col items-center">
       <h2 className="pageTitle mt-12">About</h2>
-      <div className="h-full w-full flex flex-col items-center justify-center p-5">
+      <div className="h-full w-full flex flex-col items-center justify-center p-5 -mt-12">
         <div className="max-w-4xl flex flex-col md:flex-row items-center text-center md:text-left">
           <motion.div
             initial="offscreen"
@@ -26,7 +26,7 @@ const About = () => {
                 },
               },
             }}
-            className="w-40 h-40 md:w-48 md:h-48 flex-shrink-0 mb-6 md:mb-0"
+            className="w-40 h-40 md:w-48 md:h-48 flex-shrink-0 flex items-center"
           >
             <Image
               src="/avatar_Alban2.webp"
@@ -54,7 +54,7 @@ const About = () => {
                 },
               },
             }}
-            className="md:ml-8 mt-6 md:mt-0 text-center md:text-left"
+            className="md:ml-8 mt-6 md:mt-0 text-center md:text-left px-6"
           >
             <h3 className="text-xl font-bold">Here is a little background</h3>
             <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
