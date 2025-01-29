@@ -8,7 +8,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-scroll z-0">
+    <div className="snap-y snap-mandatory h-screen overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
       <Header />
       <section id="hero" className="snap-start">
         <Hero />
