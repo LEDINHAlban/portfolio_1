@@ -4,22 +4,25 @@ import React from "react";
 function Projects() {
   const projects = [
     {
-      image: "/avatar_Alban2.webp",
+      image: "/projects/booking_clone_screenshot.png",
       title: "Booking Clone",
       description:
         "A clone  of a hotel booking platform, allowing users to search and explore real hotels using dynamically scraped data.",
+      repository: "https://github.com/LEDINHAlban/booking_clone",
+      demo_url: "https://booking-clone-pearl.vercel.app/",
     },
     {
-      image: "/avatar_Alban2.webp",
+      image: "/projects/portfolio_screenshot.png",
       title: "This website",
       description:
         "A sleek and interactive personal website built with Next.js, Tailwind CSS, and Framer Motion, showcasing projects, skills, and more.",
+      repository: "https://github.com/LEDINHAlban/portfolio_1",
     },
     {
-      image: "/avatar_Alban2.webp",
       title: "Todo App",
       description:
         "A modern and efficient task management app developed with Next.js, PostgreSQL, and Prisma, offering a seamless experience for organizing daily tasks.",
+      repository: "https://github.com/LEDINHAlban/todo_list_1st",
     },
   ];
   return (
@@ -30,17 +33,39 @@ function Projects() {
           return (
             <div
               key={project.title}
-              className="flex flex-col items-center bg-[#2c2b2b]  rounded-lg shadow-md p-4"
+              className="flex flex-col items-center bg-[#2c2b2b] rounded-lg shadow-md p-4 space-y-4"
             >
-              <Image
-                src={project.image}
-                alt="Projects"
-                className="rounded-t-lg"
-                width={400}
-                height={400}
-              />
-              <h4 className="text-3xl font-bold mt-4">{project.title}</h4>
+              {project.image && (
+                <Image
+                  src={project.image}
+                  alt="Projects"
+                  className="rounded-t-lg"
+                  width={400}
+                  height={400}
+                />
+              )}
+              <h4 className="text-2xl font-bold mt-4">{project.title}</h4>
               <p className="text-sm mt-2">{project.description}</p>
+              <div className="flex space-x-8">
+                {project.demo_url && (
+                  <a
+                    href={project.repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 hover:underline"
+                  >
+                    Live demo
+                  </a>
+                )}
+                <a
+                  href={project.repository}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 hover:underline"
+                >
+                  View repository
+                </a>
+              </div>
             </div>
           );
         })}
