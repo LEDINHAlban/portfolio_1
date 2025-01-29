@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ### Use of
 
 - [React icons](https://react-icons.github.io/react-icons/)
+- [Tech logos](https://techicons.dev/)
