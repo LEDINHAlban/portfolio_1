@@ -3,9 +3,10 @@
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import BackgroundCircles from "./BackgroundCircles";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+// import Image from "next/image";
 
 function Hero() {
   const [text] = useTypewriter({
@@ -22,13 +23,13 @@ function Hero() {
     <div className="relative grayBackground text-white min-h-screen flex items-center justify-center overflow-hidden">
       <BackgroundCircles />
       <div className="absolute flex flex-col items-center justify-center space-y-4">
-        <Image
+        {/* <Image
           src="/avatar_Alban2.webp"
           width={100}
           height={100}
           alt="portrait"
           className="rounded-full aspect-square object-cover"
-        />
+        /> */}
         <p className="uppercase tracking-widest text-sm">Software Engineer</p>
         <h1 className="text-4xl font-bold">
           <span>{text}</span>
