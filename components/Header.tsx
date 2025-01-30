@@ -29,10 +29,7 @@ function Header() {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
-          <Link
-            href={"#contact"}
-            className="heroButton flex space-x-3 items-center"
-          >
+          <Link href={"#contact"} className="flex space-x-3 items-center">
             <TbMailFilled color="grey" size="1.2em" className="icons" />
             <p className="hidden md:block">Get in touch</p>
           </Link>
