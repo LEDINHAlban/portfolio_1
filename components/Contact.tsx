@@ -40,11 +40,11 @@ function Contact() {
   };
 
   return (
-    <div className="h-screen grayBackground ">
-      <div className="flex justify-center items-center">
+    <div className="min-h-screen grayBackground ">
+      <div className="flex justify-center items-center mb-12">
         <h2 className="pageTitle mt-12">Contact</h2>
       </div>
-      <div className="flex justify-center items-center h-full -mt-12">
+      <div className="flex justify-center items-center h-full ">
         <form
           className="flex flex-col items-center space-y-3.5 w-full max-w-xs md:max-w-md"
           onSubmit={handleSubmit(onSubmit)}

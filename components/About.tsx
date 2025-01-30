@@ -5,9 +5,9 @@ import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <div className="h-screen grayBackground flex flex-col items-center">
-      <h2 className="pageTitle mt-12">About</h2>
-      <div className="h-full w-full flex flex-col items-center justify-center p-5 -mt-12">
+    <div className="min-h-screen grayBackground flex flex-col items-center">
+      <h2 className="pageTitle mt-12 mb-12">About</h2>
+      <div className="h-full w-full flex flex-col items-center justify-center p-5">
         <div className="max-w-4xl flex flex-col md:flex-row items-center text-center md:text-left">
           <motion.div
             initial="offscreen"

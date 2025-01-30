@@ -115,7 +115,7 @@ function Skills() {
     },
   ];
   return (
-    <div className="h-screen grayBackground flex flex-col items-center">
+    <div className="min-h-screen grayBackground flex flex-col items-center">
       <h2 className="pageTitle mt-12">Skills</h2>
       <div className="grid grid-cols-4 gap-4 mt-20 md:mt-0 p-[50px]">
         {skills.map((skill) => {
