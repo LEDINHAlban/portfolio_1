@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Projects() {
@@ -13,7 +14,7 @@ function Projects() {
     },
     {
       image: "/projects/portfolio_screenshot.png",
-      title: "This website",
+      title: "This Website",
       description:
         "A sleek and interactive personal website built with Next.js, Tailwind CSS, and Framer Motion, showcasing projects, skills, and more.",
       repository: "https://github.com/LEDINHAlban/portfolio_1",
@@ -23,6 +24,11 @@ function Projects() {
       description:
         "A modern and efficient task management app developed with Next.js, PostgreSQL, and Prisma, offering a seamless experience for organizing daily tasks.",
       repository: "https://github.com/LEDINHAlban/todo_list_1st",
+    },
+    {
+      title: "Dropshipping Store",
+      description:
+        "A website (not in production anymore) built with Shopify, offering a wide range of products for animals",
     },
   ];
   return (
@@ -48,23 +54,25 @@ function Projects() {
               <p className="text-sm mt-2">{project.description}</p>
               <div className="flex space-x-8">
                 {project.demo_url && (
-                  <a
+                  <Link
+                    href={project.demo_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 hover:underline"
+                  >
+                    View demo
+                  </Link>
+                )}
+                {project.repository && (
+                  <Link
                     href={project.repository}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 hover:underline"
                   >
-                    Live demo
-                  </a>
+                    View repository
+                  </Link>
                 )}
-                <a
-                  href={project.repository}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 hover:underline"
-                >
-                  View repository
-                </a>
               </div>
             </div>
           );
