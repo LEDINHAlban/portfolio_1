@@ -3,7 +3,6 @@
 import * as z from "zod";
 
 import React from "react";
-import sendEmail from "@/app/lib/send-mail";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -27,16 +26,33 @@ function Contact() {
   });
 
   const onSubmit = async (data: FormData) => {
-    await sendEmail(
-      data.email,
-      data.subject,
-      `Name: ${data.name} <br>
-      Email: ${data.email} <br><br>
-      Message: <br>
-      ${data.message}`
-    );
-    reset();
-    alert("Email sent successfully");
+    // await sendEmail(
+    //   data.email,
+    //   data.subject,
+    //   `Name: ${data.name} <br>
+    //   Email: ${data.email} <br><br>
+    //   Message: <br>
+    //   ${data.message}`
+    // );
+    // reset();
+    // alert("Email sent successfully");
+    try {
+      const response = await fetch(`/api/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+      reset();
+      alert("Email sent successfully");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email");
+    }
   };
 
   return (
