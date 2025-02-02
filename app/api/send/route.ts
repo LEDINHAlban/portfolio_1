@@ -7,10 +7,10 @@ export async function POST(req: Request) {
   const { email, subject, name, message } = await req.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: email,
+      from: "noreply@albanledinh.com",
       to: [process.env.MY_EMAIL || ""],
       subject: subject,
-      react: await EmailTemplate({ firstName: `${name} ${message}` }),
+      react: await EmailTemplate({ name, email, message, subject }),
     });
 
     if (error) {
