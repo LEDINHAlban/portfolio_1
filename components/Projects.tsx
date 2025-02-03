@@ -20,15 +20,18 @@ function Projects() {
       repository: "https://github.com/LEDINHAlban/portfolio_1",
     },
     {
+      image: "/projects/todo_list_screenshot.png",
       title: "Todo App",
       description:
         "A modern and efficient task management app developed with Next.js, PostgreSQL, and Prisma, offering a seamless experience for organizing daily tasks.",
       repository: "https://github.com/LEDINHAlban/todo_list_1st",
     },
     {
+      image: "/projects/dropshipping_screenshot.png",
+
       title: "Dropshipping Store",
       description:
-        "A website (not in production anymore) built with Shopify, offering a wide range of products for animals",
+        "A website (not in accessible anymore) built with Shopify, offering a wide range of products for animals",
     },
   ];
   return (
