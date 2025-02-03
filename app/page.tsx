@@ -14,23 +14,23 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="snap-start snap-always">
+      <section id="about" className="scroll">
         <About />
       </section>
 
-      <section id="experience" className="snap-start snap-always">
+      <section id="experience" className="scroll">
         <WorkExperience />
       </section>
 
-      <section id="skills" className="snap-start snap-always">
+      <section id="skills" className="scroll">
         <Skills />
       </section>
 
-      <section id="projects" className="snap-start snap-always">
+      <section id="projects" className="scroll">
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start snap-always">
+      <section id="contact" className="scroll">
         <Contact />
       </section>
     </div>
