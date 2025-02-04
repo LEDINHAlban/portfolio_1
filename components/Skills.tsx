@@ -11,113 +11,101 @@ function Skills() {
   }
   const skills = [
     {
-      title: "Figma",
-      name: "figma.svg",
-      direction: Direction.Left,
-      mastering: 50,
-    },
-    {
       title: "Jira",
       name: "jira.svg",
       direction: Direction.Left,
-      mastering: 70,
     },
-    { title: "JS", name: "js.svg", direction: Direction.Left, mastering: 80 },
     {
-      title: "Nestjs",
-      name: "nestjs.svg",
+      title: "Docker",
+      name: "docker.svg",
       direction: Direction.Left,
-      mastering: 30,
+    },
+    { title: "Javascript", name: "js.svg", direction: Direction.Left },
+    {
+      title: "TypeScript",
+      name: "typescript.svg",
+      direction: Direction.Left,
+      mastering: 80,
+    },
+    {
+      title: "Figma",
+      name: "figma.svg",
+      direction: Direction.Left,
+    },
+    {
+      title: "Nextjs",
+      name: "nextjs.svg",
+      direction: Direction.Left,
     },
     {
       title: "React",
       name: "react.svg",
       direction: Direction.Left,
-      mastering: 80,
-    },
-    {
-      title: "VSC",
-      name: "vsc.svg",
-      direction: Direction.Left,
-      mastering: 80,
     },
     {
       title: "Vuejs",
       name: "vuejs.svg",
       direction: Direction.Left,
-      mastering: 40,
-    },
-    {
-      title: "Nodejs",
-      name: "nodejs.svg",
-      direction: Direction.Left,
-      mastering: 40,
     },
     {
       title: "CSS3",
       name: "css3.svg",
-      direction: Direction.Right,
-      mastering: 80,
+      direction: Direction.Left,
     },
     {
-      title: "Docker",
-      name: "docker.svg",
+      title: "Tailwind",
+      name: "tailwind.svg",
+      direction: Direction.Left,
+    },
+    {
+      title: "VSC",
+      name: "vsc.svg",
+      direction: Direction.Left,
+    },
+    {
+      title: "GraphQL",
+      name: "graphql.svg",
+      direction: Direction.Left,
+    },
+    {
+      title: "Nodejs",
+      name: "nodejs.svg",
       direction: Direction.Right,
-      mastering: 40,
+    },
+    {
+      title: "Nestjs",
+      name: "nestjs.svg",
+      direction: Direction.Right,
     },
     {
       title: "FeathersJS",
       name: "feathers.svg",
       direction: Direction.Right,
-      mastering: 40,
-    },
-    {
-      title: "GraphQL",
-      name: "graphql.svg",
-      direction: Direction.Right,
-      mastering: 40,
     },
     {
       title: "MongoDB",
       name: "mongodb.svg",
       direction: Direction.Right,
-      mastering: 40,
     },
     {
       title: "MySQL",
       name: "mysql.svg",
       direction: Direction.Right,
-      mastering: 40,
-    },
-    {
-      title: "Nextjs",
-      name: "nextjs.svg",
-      direction: Direction.Right,
-      mastering: 80,
     },
     {
       title: "Postgres",
       name: "postgressql.svg",
       direction: Direction.Right,
-      mastering: 50,
-    },
-    {
-      title: "Tailwind",
-      name: "tailwind.svg",
-      direction: Direction.Right,
-      mastering: 70,
-    },
-    {
-      title: "TypeScript",
-      name: "typescript.svg",
-      direction: Direction.Right,
-      mastering: 80,
     },
   ];
   return (
     <div className="min-h-screen grayBackground flex flex-col items-center">
       <h2 className="pageTitle mt-12">Skills</h2>
-      <div className="grid grid-cols-4 gap-4 mt-20 md:mt-0 p-[50px]">
+      <h3 className="flex justify-center items-center mt-4 text-center text-gray-300 text-sm md:text-base leading-relaxed">
+        Full-stack developer with expertise in front-end and proficiency in
+        back-end.
+      </h3>
+      <div className="grid grid-cols-4 gap-4 sm:mt-18 p-[50px]">
         {skills.map((skill) => {
           return (
             <motion.div
@@ -150,9 +138,6 @@ function Skills() {
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-80 flex flex-col items-center justify-center rounded-full transition-opacity duration-300">
                 <span className="text-black text-sm font-bold text-center">
                   {`${skill.title}`}
-                </span>
-                <span className="text-black text-xl font-bold text-center">
-                  {`${skill.mastering}%`}
                 </span>
               </div>
             </motion.div>
