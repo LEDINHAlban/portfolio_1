@@ -31,7 +31,7 @@ function Projects() {
 
       title: "Dropshipping Store",
       description:
-        "A website (not in accessible anymore) built with Shopify, offering a wide range of products for animals",
+        "A website (not accessible anymore) built with Shopify, offering a wide range of products for animals",
     },
   ];
   return (
