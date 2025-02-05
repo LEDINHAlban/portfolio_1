@@ -57,7 +57,7 @@ function Contact() {
 
   return (
     <div className="h-screen grayBackground ">
-      <div className="flex justify-center items-center mb-12">
+      <div className="flex justify-center items-center">
         <h2 className="pageTitle mt-12">Contact</h2>
       </div>
       <div className="flex justify-center items-center h-full -mt-24">
