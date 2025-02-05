@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
+
 import { motion } from "motion/react";
 
 const About = () => {
@@ -9,7 +10,8 @@ const About = () => {
       <h2 className="pageTitle mt-12 mb-12">About</h2>
       <div className="h-full w-full flex flex-col items-center justify-center p-5 sm:mt-24">
         <div className="max-w-6xl flex flex-col md:flex-row items-center text-center md:text-left">
-          <motion.div
+          {/* If I want to add a picture of myself later */}
+          {/* <motion.div
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ amount: 0.8 }}
@@ -35,7 +37,7 @@ const About = () => {
               height={192}
               className="rounded-lg"
             />
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial="offscreen"
@@ -68,11 +70,10 @@ const About = () => {
               with great enthusiasm. I have completed several projects involving
               data management operations.
               <br />
-              <br />
-              With a degree in energy engineering, I pay particular attention to
-              the impact of technology on the environment. Although I am still
-              expanding my knowledge in this area, I am determined to contribute
-              to more sustainable technological solutions.
+              <br />I am sensitive to the impact of technology on the
+              environment. Although I am still expanding my knowledge in this
+              field, I am determined to contribute to more sustainable
+              technological solutions.
             </p>
           </motion.div>
         </div>

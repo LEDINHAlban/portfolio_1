@@ -18,10 +18,10 @@ function Header() {
           className="flex space-x-4"
         >
           <Link href="https://github.com/LEDINHAlban">
-            <FaGithub color="grey" size="1.2em" className="icons" />
+            <FaGithub color="grey" size="1.6em" className="icons" />
           </Link>
           <Link href="https://www.linkedin.com/in/a-ledinh/">
-            <FaLinkedin color="grey" size="1.2em" className="icons" />
+            <FaLinkedin color="grey" size="1.6em" className="icons" />
           </Link>
         </motion.div>
         <motion.div
@@ -30,7 +30,7 @@ function Header() {
           transition={{ duration: 1.5 }}
         >
           <Link href={"#contact"} className="flex space-x-3 items-center">
-            <TbMailFilled color="grey" size="1.2em" className="icons" />
+            <TbMailFilled color="grey" size="1.6em" className="icons" />
             <p className="hidden md:block">Get in touch</p>
           </Link>
         </motion.div>
