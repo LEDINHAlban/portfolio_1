@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-transparent z-50 p-4">
+    <header className="fixed top-0 bg-transparent z-50 p-4 w-full">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         <motion.div
           initial={{ x: -70, opacity: 0, scale: 0 }}
