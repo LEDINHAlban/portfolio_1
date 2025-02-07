@@ -3,11 +3,11 @@ Welcome to my personal portfolio website repository. This project showcases my w
 
 ## Built With
 
-Next.js: A React framework for server-side rendering and static site generation.
-Tailwind CSS: A utility-first CSS framework for styling.
-Framer Motion: A library for animations in React applications.
-React Hook Form : A library to handle forms
-Zod: A TypeScript-first schema declaration and validation library
+- Next.js: A React framework for server-side rendering and static site generation.
+- Tailwind CSS: A utility-first CSS framework for styling.
+- Framer Motion: A library for animations in React applications.
+- React Hook Form : A library to handle forms
+- Zod: A TypeScript-first schema declaration and validation library
 
 ## Getting Started
 
