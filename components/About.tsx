@@ -56,18 +56,34 @@ const About = () => {
               custom={5}
               style={shape}
             />
-            {/* Keyboard */}
-            <motion.rect
-              width="700"
-              height="80"
-              x="100"
-              y="470"
-              rx="20"
-              stroke="#808080"
-              variants={draw}
-              custom={6}
-              style={shape}
-            />
+            <motion.g>
+              {/* Screen support */}
+              <motion.rect
+                width="250"
+                height="30"
+                x="325"
+                y="500"
+                rx="15"
+                stroke="#808080"
+                fill="#808080"
+                variants={draw}
+                custom={6}
+                style={shape}
+              />
+
+              {/* Square */}
+              <motion.rect
+                width="100"
+                height="50"
+                x="400"
+                y="450"
+                stroke="#808080"
+                fill="#808080"
+                variants={draw}
+                custom={6}
+                style={shape}
+              />
+            </motion.g>
             <foreignObject x="110" y="110" width="680" height="400">
               <div className="text-gray-300 text-lg md:text-xl leading-relaxed p-4 overflow-y-auto">
                 <AboutContent />
