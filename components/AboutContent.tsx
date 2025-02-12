@@ -6,22 +6,22 @@ function AboutContent() {
       <h3 className="text-xl font-bold text-center">
         Here is a little background
       </h3>
-      <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed text-center">
-        I&apos;m Alban. I&apos;ve been coding for over 2 years now. As a Full
-        Stack developer, I&apos;ve worked with real-estate and event management
-        companies.
+      <p className="mt-6 text-gray-300 text-sm md:text-base leading-relaxed text-center">
+        Hi, I&apos;m Alban, a full-stack developer with two years of experience
+        building web applications for the real estate and event management
+        industries.
         <br />
         <br />
-        I&apos;m a passionate developer specializing in
-        <strong> ReactJS</strong> and <strong>TypeScript</strong>, I am just
-        beginning to explore the world of
-        <strong> Next.js</strong> with great enthusiasm. I have completed
-        several projects involving data management operations.
+        I&apos;m passionate about crafting clean, efficient, and user-friendly
+        experiences using <strong> ReactJS</strong> and{" "}
+        <strong>TypeScript</strong>. I&apos;m also enthusiastically diving into
+        the world of <strong> Next.js</strong> and eager to apply its power to
+        future projects.
         <br />
-        <br />I am sensitive to the impact of technology on the
-        <strong> environment</strong>. Although I am still expanding my
-        knowledge in this field, I am determined to contribute to more
-        sustainable technological solutions.
+        <br />
+        My experience includes developing several data-driven applications, and
+        I&apos;m particularly interested in exploring how technology can be used
+        to create more <strong> sustainable</strong> solutions.
       </p>
     </>
   );
