@@ -30,8 +30,8 @@ const About = () => {
   };
 
   return (
-    <div className="h-screen grayBackground flex flex-col items-center justify-center sm:pt-20">
-      <h2 className="pageTitle sm:mt-0 mb-12">About</h2>
+    <div className="min-h-screen grayBackground flex flex-col items-center justify-center sm:pt-20">
+      <h2 className="pageTitle sm:mt-0 sm:mb-0 mb-12">About</h2>
       <div className="min-h-0 w-full flex flex-col items-center justify-center p-5">
         <div className="max-w-6xl flex flex-col items-center text-center">
           <motion.svg

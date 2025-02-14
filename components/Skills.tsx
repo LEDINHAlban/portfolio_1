@@ -101,7 +101,7 @@ function Skills() {
   return (
     <div className="min-h-screen grayBackground flex flex-col items-center">
       <h2 className="pageTitle mt-12">Skills</h2>
-      <h3 className="flex justify-center items-center mt-4 text-center text-gray-300 text-sm md:text-base leading-relaxed">
+      <h3 className="flex justify-center items-center mt-4 text-center text-gray-300 text-sm md:text-base leading-relaxed p-4">
         Full-stack developer with expertise in front-end and proficiency in
         back-end.
       </h3>

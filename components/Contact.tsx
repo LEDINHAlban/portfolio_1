@@ -26,16 +26,6 @@ function Contact() {
   });
 
   const onSubmit = async (data: FormData) => {
-    // await sendEmail(
-    //   data.email,
-    //   data.subject,
-    //   `Name: ${data.name} <br>
-    //   Email: ${data.email} <br><br>
-    //   Message: <br>
-    //   ${data.message}`
-    // );
-    // reset();
-    // alert("Email sent successfully");
     try {
       const response = await fetch(`/api/send`, {
         method: "POST",
@@ -56,11 +46,11 @@ function Contact() {
   };
 
   return (
-    <div className="h-screen grayBackground ">
+    <div className="min-h-screen grayBackground sm:pt-20">
       <div className="flex justify-center items-center">
-        <h2 className="pageTitle mt-12">Contact</h2>
+        <h2 className="pageTitle mb-12">Contact</h2>
       </div>
-      <div className="flex justify-center items-center h-full -mt-24">
+      <div className="flex justify-center items-center h-full">
         <form
           className="flex flex-col items-center space-y-3.5 w-full max-w-xs md:max-w-md"
           onSubmit={handleSubmit(onSubmit)}
