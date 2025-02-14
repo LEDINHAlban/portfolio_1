@@ -42,7 +42,7 @@ function Projects() {
           return (
             <div
               key={project.title}
-              className="flex flex-col items-center bg-[#2c2b2b] rounded-lg shadow-md p-4 space-y-4"
+              className="flex flex-col items-center bg-[#2c2b2b] rounded-lg shadow-md p-4 space-y-4 textColor"
             >
               {project.image && (
                 <Image
@@ -53,8 +53,10 @@ function Projects() {
                   height={400}
                 />
               )}
-              <h4 className="text-2xl font-bold mt-4">{project.title}</h4>
-              <p className="text-sm mt-2">{project.description}</p>
+              <h4 className="text-2xl font-bold mt-4 textColor">
+                {project.title}
+              </h4>
+              <p className="text-sm mt-2 textColor">{project.description}</p>
               <div className="flex space-x-8">
                 {project.demo_url && (
                   <Link

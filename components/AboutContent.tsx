@@ -3,10 +3,10 @@ import React from "react";
 function AboutContent() {
   return (
     <>
-      <h3 className="text-xl font-bold text-center">
+      <h3 className="text-xl font-bold text-center textColor">
         Here is a little background
       </h3>
-      <p className="mt-6 text-gray-300 text-sm md:text-base leading-relaxed text-center">
+      <p className="mt-6 textColor text-sm md:text-base leading-relaxed text-center">
         Hi, I&apos;m Alban, a full-stack developer with two years of experience
         building web applications for the real estate and event management
         industries.

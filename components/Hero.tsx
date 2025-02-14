@@ -30,7 +30,9 @@ function Hero() {
           alt="portrait"
           className="rounded-full aspect-square object-cover"
         /> */}
-        <p className="uppercase tracking-widest text-sm">Software Engineer</p>
+        <p className="uppercase tracking-widest text-sm text-white">
+          Software Engineer
+        </p>
         <h1 className="text-4xl font-bold">
           <span>{text}</span>
           <Cursor cursorColor="#F7AB0A" />

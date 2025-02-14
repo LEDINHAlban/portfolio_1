@@ -31,7 +31,7 @@ function Header() {
         >
           <Link href={"#contact"} className="flex space-x-3 items-center">
             <TbMailFilled color="grey" size="1.6em" className="icons" />
-            <p className="hidden md:block">Get in touch</p>
+            <p className="hidden md:block textColor">Get in touch</p>
           </Link>
         </motion.div>
       </div>

@@ -22,8 +22,8 @@ function CardExperience({ data }: { data: Experience }) {
         />
       </div>
       <div className="flex flex-col space-y-1 mt-5">
-        <h3 className="text-4xl font-light">{data.company}</h3>
-        <p className="font-bold text-2xl">{data.role}</p>
+        <h3 className="text-4xl font-light textColor">{data.company}</h3>
+        <p className="font-bold text-2xl textColor">{data.role}</p>
         <div className="flex space-x-2">
           {data.stacks.map((stack) => (
             <Image key={stack} src={stack} height={40} width={40} alt={stack} />
@@ -31,8 +31,8 @@ function CardExperience({ data }: { data: Experience }) {
         </div>
       </div>
 
-      <p className="mt-7 uppercase text-sm text-gray-300">{data.date}</p>
-      <ul className="pl-4 space-y-4 text-sm mt-3 list-disc">
+      <p className="mt-7 uppercase text-sm textColor">{data.date}</p>
+      <ul className="pl-4 space-y-4 text-sm mt-3 list-disc textColor">
         {data.description.map((desc) => (
           <li key={desc}>{desc}</li>
         ))}

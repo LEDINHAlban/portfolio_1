@@ -36,4 +36,7 @@ body {
   .icons {
     @apply transition-transform duration-200 hover:scale-125;
   }
+  .textColor {
+    @apply text-gray-300;
+  }
 }

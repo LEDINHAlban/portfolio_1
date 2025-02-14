@@ -85,14 +85,14 @@ const About = () => {
               />
             </motion.g>
             <foreignObject x="110" y="110" width="680" height="400">
-              <div className="text-gray-300 text-lg md:text-xl leading-relaxed p-4 overflow-y-auto">
+              <div className="textColor text-lg md:text-xl leading-relaxed p-4 overflow-y-auto">
                 <AboutContent />
               </div>
             </foreignObject>
           </motion.svg>
 
           {/* On mobile, only display text without the animation */}
-          <div className="sm:hidden text-gray-300 text-lg md:text-xl leading-relaxed p-4">
+          <div className="sm:hidden textColor text-lg md:text-xl leading-relaxed p-4">
             <AboutContent />
           </div>
         </div>

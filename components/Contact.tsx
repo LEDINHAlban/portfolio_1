@@ -55,7 +55,7 @@ function Contact() {
           className="flex flex-col items-center space-y-3.5 w-full max-w-xs md:max-w-md"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <p>Let&apos;s get in touch !</p>
+          <p className="textColor">Let&apos;s get in touch !</p>
           <input
             className="inputs w-full"
             placeholder="Name"
