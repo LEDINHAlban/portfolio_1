@@ -36,7 +36,4 @@ body {
   .icons {
     @apply transition-transform duration-200 hover:scale-125;
   }
-  .scroll {
-    @apply md:snap-start md:snap-always scroll-pb-[500px];
-  }
 }
